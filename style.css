@@ -54,7 +54,7 @@ header{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 56px;
     line-height: 70.56px;
 }
 #webinfo p{
@@ -80,10 +80,18 @@ header{
     height: 63px;
 }
 #webinfo button:hover{
-    background: linear-gradient(180deg,#F02AA6 100%,#FF6F48 0% );
+    background: linear-gradient(180deg,#F02AA6 0%,#FF6F48 100% );
     
 }
 
 #hero-mobile, #hero-tablet{
     display: none;
 }
+#hero-desktop{
+    width: 100%;
+}
+
+/* starting midpage */ 
+
+
+

@@ -48,6 +48,8 @@ header{
 
 .header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
 }
 #webinfo h1{
@@ -89,9 +91,41 @@ header{
 }
 #hero-desktop{
     width: 100%;
+    left:784px;
+    top: -146.13px;
 }
 
 /* starting midpage */ 
 
+#midpage{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    
+}
+h3{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #13183F;
+}
+#intro h2{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size:32px ;
+    line-height: 40px;
+    color: #ffffff;
+}
+#intro{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    width: 350px;
+    height: 322px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 

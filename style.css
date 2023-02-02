@@ -6,8 +6,16 @@
 body{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
     
-    
+}
+section{
+    width: 77,08vw;
 }
 /* starts header */  
 header{
@@ -96,36 +104,88 @@ header{
 }
 
 /* starting midpage */ 
-
-#midpage{
+.midpage{
+    width: 100%%;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom: 140px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    column-gap: 30px;
+    row-gap: 80px;
+}
+.intro{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    width: 350px;
+    height: 322px;
+    color: #FFFFFF;
     
 }
-h3{
+.intro h2{
+    margin: 64px 32px 138px;
+}
+.courses{
+    width: 350px;
+    height: 322px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    
+}
+.courses h3{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 30px;
     color: #13183F;
+    margin-left: 32px;
 }
-#intro h2{
+.courses p{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
-    font-weight: 800;
-    font-size:32px ;
-    line-height: 40px;
-    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869a;
+    margin: 24px 32px;
 }
-#intro{
-    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-    border-radius: 15px;
-    width: 350px;
-    height: 322px;
+.courses button{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F02AA6;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    margin-left: 32px;
+}
+.courses img{
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #13183F;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
 }
-
-

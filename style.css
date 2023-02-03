@@ -15,14 +15,15 @@ body{
     
 }
 section{
-    width: 77,08vw;
+    width: 80vw;
 }
-/* starts header */  
+/* starting header */  
 header{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 .top{
     display: flex;
@@ -56,9 +57,18 @@ header{
 
 .header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    margin: 0 auto;
+    transform: translateY(-10%);
+}
+#webinfo{
+    
+    margin: 10vw 0 0 10vw;
+    display: inline-block;
+   
 }
 #webinfo h1{
     font-family: 'Plus Jakarta Sans';
@@ -88,9 +98,10 @@ header{
     color: #ffffff;
     width: 167px;
     height: 63px;
+    margin-top: 40px;
 }
 #webinfo button:hover{
-    background: linear-gradient(180deg,#F02AA6 0%,#FF6F48 100% );
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     
 }
 
@@ -98,16 +109,23 @@ header{
     display: none;
 }
 #hero-desktop{
-    width: 100%;
-    left:784px;
-    top: -146.13px;
+    position: relative;
+    top: -10.14vw;
+    right: -23.307vw;
+    z-index: -1;
+    width: 60.63vw;
+    height: 55.13vw;
+    
 }
 
 /* starting midpage */ 
 .midpage{
-    width: 100%%;
+    width: 100%;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     padding-bottom: 140px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .grid{
@@ -116,6 +134,8 @@ header{
     grid-template-rows: 50% 50%;
     column-gap: 30px;
     row-gap: 80px;
+    width: 80vw;
+    margin: 0 auto;
 }
 .intro{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -165,22 +185,16 @@ header{
     cursor: pointer;
     background: #ffffff;
     margin-left: 32px;
+    
+}
+.start:hover{
+    color: #FFA7C3;
+
 }
 .courses img{
     transform: translateY(-50%);
+    transform: translateX(+50%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     background: #13183F;
@@ -188,4 +202,55 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.get-startedtwo{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    width:167px;
+    height: 56px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;    
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.get-startedtwo:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;
+}
+@media(max-width:1227px){
+    .grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+
+    }
+    #hero-desktop{
+        display: none;
+    }
+    #hero-tablet{
+        display: flex;
+        width: 60.63vw;
+        height: 55.13vw;
+    }
+}
+@media(max-width:810px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20% ;
+    }
+    .midpage{
+        margin: 0 auto;
+    }
+    #hero-tablet{
+        display: none;
+    }
+    #hero-mobile{
+        display: flex;
+    }
+    .header{
+        display: block;
+    }
 }

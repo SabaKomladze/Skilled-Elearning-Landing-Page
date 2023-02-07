@@ -40,6 +40,9 @@ body{
     margin-top: 22px;
     justify-content: flex-end;
 }
+.header-gs:hover{
+    background: #666CA3;
+}
 
 .middle{ 
     
@@ -86,7 +89,9 @@ body{
     border: none;
     cursor: pointer;
 }
-
+.maxdiv button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
+}
 #hero-mob{
     width: 327px;
     height: 301px;
@@ -168,6 +173,10 @@ body{
     margin-left: 28px;
     background: #ffffff;
 }
+.class button:hover{
+    color:  #FFA7C3;
+    
+}
 footer{
     width: 375px;
     height: 120px;
@@ -198,6 +207,9 @@ footer{
     cursor: pointer;
     margin-right: 16px;
     
+}
+.footer-gs:hover{
+    background:  linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 #light{
     margin-left: 16px;

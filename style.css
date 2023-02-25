@@ -1,14 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    /*border: 5px solid red;*/
+    box-sizing: border-box;
     
-   box-sizing: border-box;
 }
 body{
-    width: 375px;
-    height: 2615px;
     margin: 0 auto;
+    align-items: center;
     font-family: 'Plus Jakarta Sans';
     font-style: normal; 
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -21,7 +19,7 @@ body{
 }
 
 #header-skilled{
-    margin-left: 16px;
+    padding-left: 16px;
     margin-top: 22px;
     width: 89px;
     height: auto;
@@ -52,12 +50,13 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
+    padding-left: 16px;
 }
 .maxdiv{
     font-family: 'Plus Jakarta Sans';
     font-style: normal; 
     margin-top: 38px;
-    margin-left:16px ;
+    
 }
 .maximize{
     
@@ -95,16 +94,18 @@ body{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
 }
 #hero{
-    background-image: url(./image-hero-mobile@2x.png);
+    background-image: url(./image-hero-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 370px;
-    background-size: 100% 100%;
+    
     
 }
+.courses{
+    padding-left: 16px;
+}
 .intro{
-    width: 343px;
-    height: 120px;
+    
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 10px;
     display: flex;
@@ -117,21 +118,21 @@ body{
     line-height: 32px;
     margin-left:28px ;
 }
-.courses{
-    margin-left: 16px;
-}
+
 .grid{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+}
+.courses{
+    padding: 16px;
 }
 .class{
-    width: 343px;
-    height: 259px;
+    padding: 56px 22px 32px 22px;
     background: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     border-radius: 10px;
-    margin-bottom: 40px;
+    
 }
 .class img{
     transform: translateY(-50%);
@@ -178,21 +179,22 @@ body{
     
 }
 footer{
-    width: 375px;
+    width: 100vw;
     height: 120px;
     margin-top: 140px;
     background: #13183F;
+    display:inline-block;
     justify-content: space-between;
     align-items: center;
-    display:inline-block;
-
+    
+    
 }
 .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 36px;
-
+    
 }
 .footer-gs{
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
@@ -206,34 +208,63 @@ footer{
     font-size: 16px;
     line-height: 28px;
     cursor: pointer;
-    margin-right: 16px;
     border: none;
     
 }
 .footer-gs:hover{
     background:  linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
-#light{
-    margin-left: 16px;
-}
+
 @media (min-width:768px){
     body{
-        width: 768px;
-        height: 1760px;
+       
         margin: 0 auto;
-        background-image: url(./image-hero-tablet@2x.png);
+        background-image: url(./image-hero-tablet.png);
         background-repeat: no-repeat;
-        
+        background-position-x: calc(100% + 300px); 
+        background-position-y: -92.13px;
     }
-    .middle{
-        display: flex;
-        
-
-    }
-    
-    
-  
     .maxdiv{
-        margin-left: 39px;
+        margin-top: 105px;
+    }
+    #hero{
+        display: none;
+    }
+    
+  .intro{
+    
+    display: block;
+    padding-top: 56px;
+  }
+    
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .courses{
+        padding: 31px 40px 200px 40px;
+    }
+    footer{
+        padding-left:40px ;
+        padding-right: 40px;
+    }
+}
+@media(min-width:1440px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr; 
+        
+    }
+    .class{
+        padding: 64px 32px 40px 32px;
+    }
+    body{
+        margin: 0 auto;
+        background-image: url(./image-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: -146.13px;
+        background-position-x: calc(100% + 300px);
+    }
+    .courses{
+        padding: 0 165px 140px 165px;
     }
 }

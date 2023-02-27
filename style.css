@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
 }
+
+    
+
 body{
     margin: 0 auto;
     align-items: center;
@@ -21,7 +24,7 @@ body{
 #header-skilled{
     padding-left: 16px;
     margin-top: 22px;
-    width: 89px;
+    padding-left: 16px;
     height: auto;
     justify-content: flex-start;
 }
@@ -50,22 +53,21 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
-    padding-left: 16px;
+    
 }
 .maxdiv{
     font-family: 'Plus Jakarta Sans';
     font-style: normal; 
     margin-top: 38px;
-    
+    padding-left: 16px;
 }
 .maximize{
-    
+    color: #13183F;
     font-weight: 800;
     font-size: 40px;
     line-height: 50px;
-    width:343px ;
-    height: 101px;
     margin-bottom: 26px;
+    width: 100%;
 }
 .maxdiv p{
     font-weight: 500;
@@ -88,6 +90,7 @@ body{
     font-size: 16px;
     line-height: 26px;
     border: none;
+    
     cursor: pointer;
 }
 .maxdiv button:hover{
@@ -101,8 +104,24 @@ body{
     
     
 }
-.courses{
-    padding-left: 16px;
+
+.courses {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom: 80px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    
+}
+.class{
+    padding: 0px 22px 32px 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
 }
 .intro{
     
@@ -110,7 +129,10 @@ body{
     border-radius: 10px;
     display: flex;
     align-items: center;
+    text-align: left;
+    
 }
+
 .intro h2{
     color: #ffffff;
     font-weight: 800;
@@ -119,26 +141,13 @@ body{
     margin-left:28px ;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-}
-.courses{
-    padding: 16px;
-}
-.class{
-    padding: 56px 22px 32px 22px;
-    background: #FFFFFF;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-    border-radius: 10px;
-    
-}
 .class img{
-    transform: translateY(-50%);
+    position: relative;
+    bottom: 28px;
     margin-left: 28px;
     width: 56px;
     height: 56px;
+    
 }
 .class h3{
     font-family: 'Plus Jakarta Sans';
@@ -179,14 +188,14 @@ body{
     
 }
 footer{
-    width: 100vw;
+    width: 100%;
     height: 120px;
     margin-top: 140px;
     background: #13183F;
     display:inline-block;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 0 16px
     
 }
 .footer{
@@ -224,26 +233,35 @@ footer{
         background-position-x: calc(100% + 300px); 
         background-position-y: -92.13px;
     }
+    #header-skilled{
+        padding-left: 40px;
+    }
     .maxdiv{
-        margin-top: 105px;
+        
+        padding-left: 40px;
     }
     #hero{
         display: none;
     }
     
+
+
   .intro{
     
     display: block;
     padding-top: 56px;
+    height: auto;
   }
     
     .grid{
         grid-template-columns: 1fr 1fr;
-        
+        row-gap: 56px;
+        column-gap: 10px;
     }
     .courses{
         padding: 31px 40px 200px 40px;
     }
+    
     footer{
         padding-left:40px ;
         padding-right: 40px;
@@ -252,9 +270,14 @@ footer{
 @media(min-width:1440px){
     .grid{
         grid-template-columns: 1fr 1fr 1fr; 
-        
+        row-gap: 80px;
+        column-gap: 30px;
+    }
+    #header-skilled{
+        padding-left: 165px;
     }
     .class{
+        position: relative;
         padding: 64px 32px 40px 32px;
     }
     body{
@@ -262,9 +285,56 @@ footer{
         background-image: url(./image-hero-desktop.png);
         background-repeat: no-repeat;
         background-position-y: -146.13px;
-        background-position-x: calc(100% + 300px);
+        background-position-x: calc(100% + 320px);
     }
     .courses{
-        padding: 0 165px 140px 165px;
+        margin-top: 250px;
+        padding: 0px 165px 140px 165px;
+    }
+    .class h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .class p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .class button{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .maxdiv{
+        padding-left: 165px;
+        padding-top: 172px;
+        
+    }
+    .maximize{
+        font-size: 56px;
+        line-height: 71px;
+    }
+    .maxdiv p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .maxdiv button{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 40px;
+    }
+    .header-gs{
+        margin-right: 165px;
+    }
+    .class img{
+        position: absolute;
+        top:-28px;
+    }
+    .intro h2{
+        font-size: 32px;
+        line-height: 40px;
+        width: 286px;
+        height: 120px;
+    }
+    .grid .diff{
+        margin-top: 48px;
     }
 }
